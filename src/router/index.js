@@ -1,6 +1,8 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import Home from "../views/Home.vue";
+import Home from "@views/Home.vue";
+import Joke from "@views/Joke.vue";
+
 
 Vue.use(VueRouter);
 
@@ -14,15 +16,13 @@ const routes = [
     path: "/joke",
     name: "joke",
     props: true,
-    component: () =>
-      import("../views/Joke.vue")
+    component: Joke
   },
   {
     path: "/joke/:name",
     name: "joke",
     props: true,
-    component: () =>
-      import("../views/Joke.vue")
+    component: Joke
   }
 ];
 
