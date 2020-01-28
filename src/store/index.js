@@ -5,7 +5,7 @@ Vue.use(Vuex);
 
 export default new Vuex.Store({
   state: {
-    joke: "sadas"
+    joke: ""
   },
   getters: {
     getJoke: state => state.joke

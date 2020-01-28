@@ -20,6 +20,7 @@ export default {
     if (this.$route.query.name) {
       this.name = this.$route.query.name;
     }
+    this.getJoke();
   },
   data() {
     return {
