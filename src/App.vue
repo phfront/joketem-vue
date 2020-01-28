@@ -1,11 +1,16 @@
 <template>
   <div id="app">
     <router-view />
-    <img src="@/assets/svg/vue-logo.svg">
+    <img src="@/assets/svg/vue-logo.svg" />
   </div>
 </template>
 
 <style>
+@font-face {
+  font-family: "Banger";
+  src: url("https://fonts.googleapis.com/css?family=Bangers&display=swap");
+}
+
 * {
   margin: 0px;
   padding: 0px;
@@ -36,5 +41,4 @@ img {
   right: 5px;
   bottom: 5px;
 }
-
 </style>

@@ -3,7 +3,6 @@ import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
 import Joke from "../views/Joke.vue";
 
-
 Vue.use(VueRouter);
 
 const routes = [
