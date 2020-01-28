@@ -1,32 +1,40 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
     <router-view />
+    <img src="@/assets/svg/vue-logo.svg">
   </div>
 </template>
 
 <style>
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  color: #baff00;
+  font-family: "Bangers", cursive;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: rgb(0, 100, 55);
+}
+
 #app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+  width: 100%;
+  height: 100%;
 }
 
-#nav {
-  padding: 30px;
+img {
+  position: fixed;
+  width: 45px;
+  height: auto;
+  z-index: 1;
+  right: 5px;
+  bottom: 5px;
 }
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
 </style>
