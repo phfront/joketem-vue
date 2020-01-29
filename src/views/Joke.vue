@@ -1,20 +1,24 @@
 <template>
   <div class="joke">
     <h1>Hello {{ name }}!!!</h1>
-    <v-button :disabled="loading" :onClick="getJoke" :text="loading ? 'Getting Joke...' : 'Get Joke!'"></v-button>
+    <v-button
+      :disabled="loading"
+      :onClick="getJoke"
+      :text="loading ? 'Getting Joke...' : 'Get Joke!'"
+    ></v-button>
     <v-joke :text="$store.getters.getJoke"></v-joke>
   </div>
 </template>
 
 <script>
 import Button from "@/components/Button.vue";
-import Joke from '@/components/Joke.vue';
+import Joke from "@/components/Joke.vue";
 
 export default {
   name: "joke",
   components: {
     "v-button": Button,
-    'v-joke': Joke
+    "v-joke": Joke
   },
   created() {
     if (this.$route.query.name) {

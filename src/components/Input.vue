@@ -15,31 +15,30 @@
 export default {
   name: "Button",
   props: {
-      id: {
-        type: String
-      },
-      label: {
-        type: String,
-        required: true
-      },
-      value: {
-        type: String
-      },
-      required: {
-        type: Boolean,
-        default: false
-      }
+    id: {
+      type: String
     },
-
-    methods: {
-      updateValue: function (value) {
-        this.$emit('input', value)
-      }
+    label: {
+      type: String,
+      required: true
+    },
+    value: {
+      type: String
+    },
+    required: {
+      type: Boolean,
+      default: false
     }
+  },
+
+  methods: {
+    updateValue: function(value) {
+      this.$emit("input", value);
+    }
+  }
 };
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 input {
   border: 1px solid #baff00;
